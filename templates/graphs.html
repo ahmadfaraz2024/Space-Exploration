@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Coefficients Graphs</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Top Coefficients Graphs</h1>
+    {% for category, graphs in graph_data.items() %}
+    <div>
+        <h2>{{ category }}</h2>
+        <div id="graph_{{ loop.index }}"></div>
+    </div>
+    <script>
+        var max_trace_{{ loop.index }} = {{ graphs['max_graph'] | tojson }};
+        var min_trace_{{ loop.index }} = {{ graphs['min_graph'] | tojson }};
+        var data_{{ loop.index }} = [max_trace_{{ loop.index }}, min_trace_{{ loop.index }}];
+        var layout_{{ loop.index }} = {barmode: 'group', title: '{{ category }}'};
+        Plotly.newPlot('graph_{{ loop.index }}', data_{{ loop.index }}, layout_{{ loop.index }});
+    </script>
+    {% endfor %}
+</body>
+</html>

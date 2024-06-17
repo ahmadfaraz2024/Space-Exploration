@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<div>
+    <h2>Cost Analysis and Effectiveness of Space Missions</h2>
+    {% for category, chart in cost_charts.items() %}
+    <div class="chart">
+        <h3>{{ category }}</h3>
+        {{ chart|safe }}
+    </div>
+    {% endfor %}
+</div>
+<div>
+    <h2>Investigating Factors that Contribute to Successful Launch Missions</h2>
+    {% for category, chart in success_charts.items() %}
+    <div class="chart">
+        <h3>{{ category }}</h3>
+        {{ chart|safe }}
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
