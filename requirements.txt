@@ -20,14 +20,6 @@ EditorConfig==0.12.4
 et-xmlfile==1.1.0
 Flask==2.3.3
 Flask-Caching==2.0.2
-google==3.0.0
-google-api-core==2.19.0
-google-auth==2.30.0
-google-cloud-core==2.4.1
-google-cloud-storage==2.17.0
-google-crc32c==1.5.0
-google-resumable-media==2.7.1
-googleapis-common-protos==1.63.1
 gunicorn==22.0.0
 idna==3.7
 importlib_metadata==7.1.0
@@ -39,12 +31,10 @@ jsbeautifier==1.15.1
 MarkupSafe==2.1.5
 more-itertools==9.1.0
 nest-asyncio==1.6.0
-Next-Launch-Space-Scraper @ git+https://github.com/Tanguy9862/Next-Launch-Scraper.git@298cd1225e02abb29708de5dd188d79dfb3d7b2a
 numpy==1.24.4
 openpyxl==3.1.4
 packaging==24.1
 pandas==2.0.3
-Past-Launches-Space-Scraper @ git+https://github.com/Tanguy9862/NextSpaceFlight-Scrapper.git@13ef8d94b546de99307d5d673eadaf37fe87e5a9
 plotly==5.22.0
 proto-plus==1.23.0
 protobuf==4.25.3
@@ -67,5 +57,4 @@ typing_extensions==4.12.2
 tzdata==2024.1
 urllib3==2.2.1
 Werkzeug==3.0.3
-Wikipedia-Space-Scraper @ git+https://github.com/Tanguy9862/Wikipedia_Space_Scraper.git@c7746ba014fa6bb7b75e43dd5d51a83670e1bc48
 zipp==3.19.2
